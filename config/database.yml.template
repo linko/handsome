@@ -1,0 +1,13 @@
+development: &development
+  adapter: postgresql
+  encoding: unicode
+  database: testapp_development
+  pool: 5
+  username: 
+  password: 
+  host: localhost
+  min_messages: WARNING
+
+test:
+  database: testapp_test
+  <<: *development
